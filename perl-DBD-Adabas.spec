@@ -1,12 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBD
 %define	pnam	Adabas
-Summary:	DBD::Adabas perl module
-Summary(pl):	Modu³ perla DBD::Adabas
+Summary:	DBD::Adabas - Adabas driver for DBI
+Summary(pl):	DBD::Adabas - sterownik Adabas dla DBI
 Name:		perl-DBD-Adabas
 Version:	0.2003
 Release:	3
-License:	GPL/Artistic
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	314414fe64b48e1f9cac2cf6f1396db0
