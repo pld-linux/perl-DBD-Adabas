@@ -25,7 +25,7 @@ DBD::Adabas - modu³ DBD komunikuj±cy siê z baz± danych Adabas D.
 
 %build
 %{?adabasroot:DBROOT=%{adabasroot}; export DBROOT}
-perl Makefile.PL
+%{__perl} Makefile.PL
 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
