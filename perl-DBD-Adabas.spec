@@ -9,6 +9,7 @@ Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	314414fe64b48e1f9cac2cf6f1396db0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-DBI >= 0.93
 #BR: adabas libs installed in $DBROOT or %adabasroot
