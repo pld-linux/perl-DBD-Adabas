@@ -5,11 +5,11 @@ Summary:	DBD::Adabas perl module
 Summary(pl):	Modu³ perla DBD::Adabas
 Name:		perl-DBD-Adabas
 Version:	0.2003
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-DBI >= 0.93
 #BR: adabas libs installed in $DBROOT or %adabasroot
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,7 +25,8 @@ DBD::Adabas - modu³ DBD komunikuj±cy siê z baz± danych Adabas D.
 
 %build
 %{?adabasroot:DBROOT=%{adabasroot}; export DBROOT}
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
@@ -41,8 +42,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitearch}/DBD/Adabas.pm
-%dir %{perl_sitearch}/auto/DBD/Adabas
-%{perl_sitearch}/auto/DBD/Adabas/Adabas.bs
-%attr(755,root,root) %{perl_sitearch}/auto/DBD/Adabas/Adabas.so
+%{perl_vendorarch}/DBD/Adabas.pm
+%dir %{perl_vendorarch}/auto/DBD/Adabas
+%{perl_vendorarch}/auto/DBD/Adabas/Adabas.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/DBD/Adabas/Adabas.so
 %{_mandir}/man3/*
