@@ -5,11 +5,11 @@ Summary:	DBD::Adabas perl module
 Summary(pl):	Modu³ perla DBD::Adabas
 Name:		perl-DBD-Adabas
 Version:	0.2003
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	perl-DBI >= 0.93
 #BR: adabas libs installed in $DBROOT or %adabasroot
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
