@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	DBD
-%define	pnam	Adabas
+%define		pdir	DBD
+%define		pnam	Adabas
 Summary:	DBD::Adabas - Adabas driver for DBI
 Summary(pl):	DBD::Adabas - sterownik Adabas dla DBI
 Name:		perl-DBD-Adabas
