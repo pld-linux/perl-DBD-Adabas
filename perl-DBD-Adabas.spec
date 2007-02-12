@@ -6,7 +6,7 @@
 %define		pdir	DBD
 %define		pnam	Adabas
 Summary:	DBD::Adabas - Adabas driver for DBI
-Summary(pl):	DBD::Adabas - sterownik Adabas dla DBI
+Summary(pl.UTF-8):   DBD::Adabas - sterownik Adabas dla DBI
 Name:		perl-DBD-Adabas
 Version:	0.2003
 Release:	3
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 DBD::Adabas - DBD module interfacing the Adabas D database.
 
-%description -l pl
-DBD::Adabas - modu³ DBD komunikuj±cy siê z baz± danych Adabas D.
+%description -l pl.UTF-8
+DBD::Adabas - moduÅ‚ DBD komunikujÄ…cy siÄ™ z bazÄ… danych Adabas D.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
