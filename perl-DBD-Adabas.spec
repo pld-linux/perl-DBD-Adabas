@@ -33,6 +33,7 @@ DBD::Adabas - moduł DBD komunikujący się z bazą danych Adabas D.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
