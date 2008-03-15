@@ -10,12 +10,14 @@ Summary(pl.UTF-8):	DBD::Adabas - sterownik Adabas dla DBI
 Name:		perl-DBD-Adabas
 Version:	0.2003
 Release:	3
-License:	GPL or Artistic
+# GPL or Artistic as specified in perl README file
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/DBD/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	314414fe64b48e1f9cac2cf6f1396db0
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/DBD-Adabas/
 BuildRequires:	perl-DBI >= 0.93
+BuildRequires:	rpm-perlprov >= 4.1-13
 #BR: adabas libs installed in $DBROOT or %adabasroot
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
