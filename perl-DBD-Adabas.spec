@@ -54,6 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %{perl_vendorarch}/DBD/Adabas.pm
 %dir %{perl_vendorarch}/auto/DBD/Adabas
-%{perl_vendorarch}/auto/DBD/Adabas/Adabas.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/DBD/Adabas/Adabas.so
 %{_mandir}/man3/*
